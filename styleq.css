@@ -1,0 +1,126 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(77, 29, 55) , black );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff9e;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: rgb(77, 29, 55);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: rgba(77, 29, 55, 0.79);
+}
+
+.quiz-container {
+    width: 100%;
+    text-align: center;
+}
+
+.question-box {
+    background-color: #f9f9f9a9;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.option {
+    background-color: rgb(77, 29, 55);
+    color: white;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 45%;
+    transition: background 0.3s;
+}
+
+.option.correct {
+    background-color: #22c55e;
+}
+
+.option.wrong {
+    background-color: #ef4444;
+}
+
+.explanation {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.next-button {
+    margin-top: 20px;
+    display: none;
+}
+
+.image-wrapper {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url('img/studyg.jpg'); /* الصورة الرمادية */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
+  }
+
+  .image-wrapper:hover {
+    background-image: url('img/study.gif'); /* الصورة المتحركة والملونة */
+    transform: scale(1.05); /* تكبير خفيف */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  .image-wrapper2 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url('img/writingg.png'); /* الصورة الرمادية */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+  }
+
+  .image-wrapper2:hover {
+    background-image: url('img/writing.gif'); /* الصورة المتحركة والملونة */
+    transform: scale(1.05); /* تكبير خفيف */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
