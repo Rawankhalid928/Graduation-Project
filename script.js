@@ -36,7 +36,7 @@ const theoryQuestions = [
       explanation:"الغرض منه انشاء علاقة"
     },
     {
-     question:" Truo or false من انواع البيانات التي تعبر عن القيمة المنطقية "  ,
+     question:" True or false من انواع البيانات التي تعبر عن القيمة المنطقية "  ,
      options:["Float","Double","int","Boolean"],
      correct:3 ,
       explanation:"هو نوع بيانات يستخدم لتمثيل قيمتين فقط اما صحيح او خاطئ"
