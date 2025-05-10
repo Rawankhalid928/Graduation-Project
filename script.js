@@ -1,15 +1,15 @@
 const theoryQuestions = [
     {
-        question: "ما هي عاصمة السعودية؟",
-        options: ["الرياض", "جدة", "مكة", "الدمام"],
-        correct: 0,
-        explanation: "العاصمة الرسمية للسعودية هي الرياض."
+        question: "لربط جدولين لاسترجاع القيم منها نستخدم الكلمة الرئيسية",
+        options: ["Group By", "Order By", "Where", "Join"],
+        correct: 3,
+        explanation: " JOIN تُستخدم لدمج صفوف من جدولين أو أكثر بناءً على عمود مشترك بينهما"
     },
     {
-        question: "كم عدد أركان الإسلام؟",
-        options: ["3", "4", "5", "6"],
-        correct: 2,
-        explanation: "أركان الإسلام خمسة وهي الشهادة، الصلاة، الزكاة، الصوم، والحج."
+        question: "أداة تمكن المستخدم من عرض مجموعة عناصر على شكل قائمة ",
+        options: ["ListBox", "CheckBox", "Label", "TextBox"],
+        correct: 0,
+        explanation:  "ListBox هي عنصر تحكم في واجهات المستخدم التي تسمح للمستخدم بعرض قائمة من العناصر "
     }
 ];
 
