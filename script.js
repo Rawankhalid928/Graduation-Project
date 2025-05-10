@@ -10,7 +10,7 @@ const theoryQuestions = [
         options: ["ListBox", "CheckBox", "Label", "TextBox"],
         correct: 0,
         explanation:  "هي عنصر تحكم في واجهات المستخدم التي تسمح للمستخدم بعرض قائمة من العناصر ListBox  "
-    }
+    },
      {
         question:"ماهي الدالة التي تستخدم لايجاد اعلى قيمة في عمود من جدول قاعدة بيانات اوراكل",
         options: [" AVG", "MAX ", "SUM", "MIN"],
