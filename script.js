@@ -97,7 +97,7 @@ const practicalQuestions = [
     {
         question: " SELECT*FROMEMP بعد تنفيذ الامر ",
         options: [" غير الخالية EMP تسترجع بيانات الجدول "," EMPتسترجع جميع سجلات الجدول ","(*)خطأفي استخدام ","يتم استرجاع السجل الاول فققط"],
-        correct: 0,
+        correct: 1,
         explanation:"تقوم باسترجاع جميع البينات الموجودة في الجدول  SELECT*FROMEMP"
     },
     {
