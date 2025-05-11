@@ -64,22 +64,66 @@ const theoryQuestions = [
      options: ["Double","String","Long","Boolean"],
      correct:1,
      explanation:" يمكن استخدامه لتخزين نصوص مثل لعناوين التي قد تحتوي على ارقام ونصوص مختلفةstring"
-    }
+    },
+     {
+     question: "ماهو البرتوكول المستخدم للوصول لصفحات وخدمات الويب",
+     options: ["DNS","SMTP","FTP","HTTP"],
+     correct:3,
+     explanation:" البروتكول الاساسي لنقل البيانات بين المستعرض والخادم HTTP"
+    },
+     {
+     question: "لترتيب البيانات الناتجة من الاستعلام تصاعديا أو تنازليا نستخدم ",
+     options: ["orderby and groupby","ASC and DESC","high and low","up and down"],
+     correct:1,
+     explanation:"هما المسؤولين عن الترتيب ASC and DESC"
+     },
+     {
+     question:"(AND,OR,XOR,NOT) تسمى المعاملات ",
+     options: ["معاملات منطقية ","معاملات حسابية","معاملات علائقية","معاملات حسابية ثنائية"],
+     correct:0,
+     explanation:"تستخدم في الشروط المنطقية"
+     },
+   
+    
 ];
 
 const practicalQuestions = [
-    {
-        question: "ما هي الطريقة الصحيحة لاستخدام الأمر في بيئة لينكس؟",
-        options: ["إدخال الأمر مباشرة", "استخدام sudo", "إضافة مسار صحيح", "مراجعة الإصدارات"],
-        correct: 1,
-        explanation: "الأمر يجب أن يُنفذ باستخدام صلاحيات الـ sudo في بيئة لينكس."
+   {
+        question:"اي من الخيارات التالية يقوم بعرض شاشة حوار لاختيار لون معين ",
+        options: ["()colorDialog1.showDialog","()showDialog","()showDialog.colorDialog1","()Dialog"],
+        correct: 0,
+        explanation: "()colorDialog1.showDialog الطريقة المعتمدة لعرض حوار الالوان "
     },
     {
-        question: "كيف تقوم بإنشاء ملف في Python؟",
-        options: ["open('filename')", "create('filename')", "touch('filename')", "open('filename', 'w')"],
-        correct: 3,
-        explanation: "يمكنك إنشاء ملف باستخدام open مع وضع 'w' لكتابة محتوى الملف."
-    }
+        question: " SELECT*FROMEMP بعد تنفيذ الامر ",
+        options: [" غير الخالية EMP تسترجع بيانات الجدول "," EMPتسترجع جميع سجلات الجدول ","(*)خطأفي استخدام ","يتم استرجاع السجل الاول فققط"],
+        correct: 0,
+        explanation:"تقوم باسترجاع جميع البينات الموجودة في الجدول  SELECT*FROMEMP"
+    },
+    {
+     question:"I=len('Mohammed')حل الكود التالي ",
+     options: ["5","Mohammed","4","8"],
+     correct:3,
+     explanation:" تتكون من 8 احرف Mohammed لاسترجاع عدد الاحرف في سلسلة نصية محددة لذا الحل هو 8 لان السلسلة  VB.NETفي لغة Len يستخدم دالة"
+     },
+     {
+     question:"أي من الجمل التالية يحتوي على خطأ",
+     options: ["SELECT empid WHERE empid=56949 AND lastname='SMITH'","SELECT*FROM emp WHERE empid=493945","SELECT empid FROM emp WHERE empid=493945","SELECT empid FROM emp"],
+     correct:0,
+     explanation:"مما يجعلها غير صحيحة FROM الجملة الخاطئة تفتقر الى "
+     },
+      {
+     question:"Sa=10*(6-4)ماهي نتيجة العملية الحسابية  ",
+     options: ["30","20","10","4"],
+     correct:1,
+     explanation:"نقوم بحساب ما بداخل القوسين ثم ضرب الناتج في 10"
+     },
+     {
+     question:"MOD(6,5)ماهو ناتج الدالة ",
+     options: ["36","5","3","1"],
+     correct:3,
+     explanation:" ترجع الباقي عند القسمة MOD"
+     },
 ];
 
 let current = 0;
