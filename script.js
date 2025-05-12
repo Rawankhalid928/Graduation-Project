@@ -83,8 +83,81 @@ const theoryQuestions = [
      correct:0,
      explanation:"تستخدم في الشروط المنطقية"
      },
-   
+        {
+    question:"يتم تمثيل الجداول في نموذج الكيانات والعلاقات ER على شكل",
+    options: ["بيضاوي","مستطيل","معين","خط مستقيم"],
+     correct:1,
+    explanation:"تستخدم شكل مستطيل"
+    },
+    {
+     question:"في لغة البرمجة java المتغيرات التي يتم تعريفها داخل الدالة loop يمكن استخدامها خارج الدالة",
+     options: ["صح","خطا"],
+     correct:1,
+     explanation:"لايمكن استخدامها خارج الدالة"
+    },
+
+    {
+     question:"جميع المتغيرات في لغة البرمجة php تبدا برمز هو",
+     options: ["&","/*","$","!"],
+     correct:2,
+    explanation:"في لغة PHP، أي متغير لازم يبدأ بالرمز $"
+    },
+
+    {
+     question:"يتم انشاء ملف Cookie بواسطة استخدام الدالة Setcookie()",
+     options: ["صح","خطا"],
+     correct:0,
+    explanation:"يتم انشاء الملفCookie بواسطة الدالة Setcookie"
+    },
+
+    {
+     question:"المستخدم النهائي لنظام قاعدة البيانات هو الذي يقوم",
+     options: ["تصميم قواعد البيانات","برمجة النظام","حماية قواعد البيانات","اضافة البيانات و التعديل و الحذف"],
+     correct:3,
+     explanation:"يقوم بالاضافة و التعديل و الحذف"
+    },
+
+    {
+     question:"النص المكتوب داخل يعتبر",
+     options: ["عنوان جانبي داخل صفحة الويب","وصف لصفحة الويب","فقرة جديدة داخل صفحة الويب","عنوان لصفحة الويب"],
+     correct:1,
+    explanation:"يعتبر وصف صفحة"
+    },
+
+    {
+     question:"لتحديد طول النص المدخل في TextBox",
+     options: ["Length","Text","Long","ForeColor"],
+     correct:0,
+     explanation:"Text يستخدم لاسترداد النص المدخل Long هو نوع بيانات يستخدم للارقام الصحيحة ForeColor تستخدم لتعيين لون الخط"
+    },
+
+    {
+    question:"لانشاء جدول استخدم الامر",
+    options: ["Alter Table","Drop Table","Create Table","Desc Table"],
+    correct:2,
+    explanation:"امر Create Table يستخدم لانشاء جدول جديد في قاعدة البيانات"
+    },
+
+    {   
+     question:"لايجاد اصغر قيمة بالجدول استخدم خاصية MIN",
+     options: ["صح","خطا"],
+     correct:0,
+    explanation:"تعني اقل قيمة MIN"
+    },
+
+    {
+     question:"يمكن تقسيم النصوص باستخدام الامر",
+     options: ["Length","Split","Replace","Index"],
+     correct:1, 
+     explanation:"امر Split يستخدم لتقسيم النص الي قطع صغيرة بناء على فاصل معين مثل مسافة او فاصلة او اي حرف اخر"
+    },
     
+    {
+    question:"تتم معالجة الاخطاء عند الاتصال بقواعد البيانات من خلال عملية",
+     options: ["Try Catch","Try","Finally","Nothing"],
+     correct:0,
+     explanation:"تستخدم Catch لالتقاط الاخطاء التي تحدث اثناء تنفيذ الكود"
+    }  
 ];
 
 const practicalQuestions = [
