@@ -157,14 +157,14 @@ const theoryQuestions = [
      options: ["Try Catch","Try","Finally","Nothing"],
      correct:0,
      explanation:"تستخدم Catch لالتقاط الاخطاء التي تحدث اثناء تنفيذ الكود"
-    },
-     {
+    } , //أخر شي ضافتو ايثار 
+    {
     question:"في قواعد البيانات تسمى الصفوف ",
     options:["Fields","Records","Tables","Columns"],
     correct:1,
-    explanation:" في قواعد البيانات تسمى صفوف Records"
+    explanation:"   في قواعد البيانات تسمى صفوف Records"
     },
-      {
+     {
     question:"تتكون قاعدة البيانات من مجموعة من",
     options:["الصفوف","اللاعمدة ","الجداول","العلاقات"],
     correct:2,
@@ -206,6 +206,7 @@ const theoryQuestions = [
     correct:1,
     explanation:"تستخدم هذه الخاصية أو الدالة غالبا في بيئات البرمجة الرسومية وهي مرتبطة عادة بعناصر تحكم الادخال"
     }
+    
 ];
 
 const practicalQuestions = [
