@@ -157,7 +157,7 @@ const theoryQuestions = [
      options: ["Try Catch","Try","Finally","Nothing"],
      correct:0,
      explanation:"تستخدم Catch لالتقاط الاخطاء التي تحدث اثناء تنفيذ الكود"
-    }  
+    },
      {
     question:"في قواعد البيانات تسمى الصفوف ",
     options:["Fields","Records","Tables","Columns"],
