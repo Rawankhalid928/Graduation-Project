@@ -349,9 +349,9 @@ const theoryQuestions = [
         correct:0,
         explanation:"بشكل عام الفهارس تبدا من الصفر لذا اذا كان لديك قائمة من اربعة عناصر فان العنصر الاخير سيكون 3"
     },
-    {
+   {
         question:"هو خطا يمكن تصحيحة بسهولة اذا توقف تشغيل البرنامج",
-        options: ["خطا التركيب النحوي <bdi>Syntax Error</bdi>","خطا منطقي <bdi>Logical Error</bdi>","خطا وقت التشغيل <bdi>Run-Time Error</bdi>","خطا المناطق الممتدة <bdi>Overflow</bdi>"],
+        options: ["Syntax Error","Logical Error","Run-Time Error","Overflow Error"],
         correct:0,
         explanation:"خطا التركيب النحوي يحدث عندما يكون هناك خطا في كتابة الشفرة"
     },
