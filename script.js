@@ -107,50 +107,42 @@ const theoryQuestions = [
      correct:0,
     explanation:"يتم انشاء ملف من خلال استخدام الدالة <bdi>SetCookie</bdi>"
     },
-
-
     {
      question:"المستخدم النهائي لنظام قاعدة البيانات هو الذي يقوم",
      options: ["تصميم قواعد البيانات","برمجة النظام","حماية قواعد البيانات","اضافة البيانات و التعديل و الحذف"],
      correct:3,
      explanation:"يقوم بالاضافة و التعديل و الحذف"
     },
-
     {
      question:"النص المكتوب داخل يعتبر",
      options: ["عنوان جانبي داخل صفحة الويب","وصف لصفحة الويب","فقرة جديدة داخل صفحة الويب","عنوان لصفحة الويب"],
      correct:1,
     explanation:"يعتبر وصف صفحة"
     },
-
     {
      question:"لتحديد طول النص المدخل في <bdi>TextBox</bdi>",
      options: ["Length","Text","Long","ForeColor"],
      correct:0,
      explanation:"Text يستخدم لاسترداد النص المدخل Long هو نوع بيانات يستخدم للارقام الصحيحة ForeColor تستخدم لتعيين لون الخط"
     },
-
     {
     question:"لانشاء جدول استخدم الامر",
     options: ["Alter Table","Drop Table","Create Table","Desc Table"],
     correct:2,
     explanation:"امر Create Table يستخدم لانشاء جدول جديد في قاعدة البيانات"
     },
-
    {   
      question:"لايجاد اصغر قيمة بالجدول استخدم خاصية <bdi>MIN</bdi>",
      options: ["صح","خطا"],
      correct:0,
     explanation:"تعني اقل قيمة <bdi>MIN</bdi>"
     },
-
     {
      question:"يمكن تقسيم النصوص باستخدام الامر",
      options: ["Length","Split","Replace","Index"],
      correct:1, 
      explanation:"امر Split يستخدم لتقسيم النص الي قطع صغيرة بناء على فاصل معين مثل مسافة او فاصلة او اي حرف اخر"
-    },
-    
+    },    
     {
     question:"تتم معالجة الاخطاء عند الاتصال بقواعد البيانات من خلال عملية",
      options: ["Try Catch","Try","Finally","Nothing"],
@@ -246,7 +238,7 @@ const theoryQuestions = [
     options:["grant","ALTER","DENY","Create"], 
     correct:1,
     explanation:"هو الأمر الأساسي لتعديل بنية الجداول في معظم أنظمة قواعد البيانات"
-    }   
+    },   
      {
         question:"لطباعة البيانات في لغة <bdi>PHP</bdi> هل يمكن استخدام الامر <bdi>Print</bdi>",
         options: ["صح","خطا"],
@@ -325,7 +317,7 @@ const theoryQuestions = [
         options: ["صح","خطا"],
         correct:0,
         explanation:"java حساسة في حالة الاحرف"
-    }       
+    } ,      
     {
         question:"لاستقبال مدخلات نصية من المستخدم في لغة <bdi>VB.Net</bdi>",
         options: ["Check Box","List Box","Input Box","Msg Box"],
