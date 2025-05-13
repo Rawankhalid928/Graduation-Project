@@ -319,7 +319,7 @@ function loadNextQuestion() {
 
 function showReport() {
     const questionBox = document.getElementById("question-box");
-    questionBox.innerHTML = "<h2>نتيجة الاختبار:</h2>";
+    questionBox.innerHTML = "<h2>النتيجة</h2>";
 
     userAnswers.forEach((answer, index) => {
         const isCorrect = answer.selected === answer.correct;
