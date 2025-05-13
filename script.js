@@ -1,4 +1,10 @@
 const theoryQuestions = [
+            {
+     question:" جميع المتغيرات في لغة البرمجة <bdi>PHP</bdi> تبدأ برمز؟ ",
+     options: ["&","/*","$","!"],
+     correct:2,
+    explanation:"في لغة PHP، أي متغير لازم يبدأ بالرمز $"
+    },
     {
         question: "لربط جدولين لاسترجاع القيم منها نستخدم الكلمة الرئيسية",
         options: ["Group By", "Order By", "Where", "Join"],
@@ -95,14 +101,6 @@ const theoryQuestions = [
      correct:1,
      explanation:"لايمكن استخدامها خارج الدالة"
     },
-
-    {
-     question:"جميع المتغيرات في لغة البرمجة php تبدا برمز هو",
-     options: ["&","/*","$","!"],
-     correct:2,
-    explanation:"في لغة PHP، أي متغير لازم يبدأ بالرمز $"
-    },
-
     {
      question:"يتم انشاء ملف Cookie بواسطة استخدام الدالة Setcookie()",
      options: ["صح","خطا"],
