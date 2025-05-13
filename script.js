@@ -304,7 +304,7 @@ function selectAnswer(selected, correct, explanation, selectedDiv) {
         options: currentQuestions[current].options
     });
 
-    document.getElementById("explanation").innerText = explanation;
+    document.getElementById("explanation").innerHTML = explanation;
     document.getElementById("next-button").style.display = "inline-block";
 }
 
