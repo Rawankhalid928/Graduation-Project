@@ -90,7 +90,7 @@ const theoryQuestions = [
      explanation:"تستخدم في الشروط المنطقية"
      },
         {
-    question:"يتم تمثيل الجداول في نموذج الكيانات والعلاقات ER على شكل",
+    question:"يتم تمثيل الجداول في نموذج الكيانات والعلاقات <bdi>ER</bdi> على شكل",
     options: ["بيضاوي","مستطيل","معين","خط مستقيم"],
      correct:1,
     explanation:"تستخدم شكل مستطيل"
@@ -101,12 +101,13 @@ const theoryQuestions = [
      correct:1,
      explanation:"لايمكن استخدامها خارج الدالة"
     },
-    {
-     question:"يتم انشاء ملف Cookie بواسطة استخدام الدالة Setcookie()",
+   {
+     question:"يتم انشاء ملف <bdi>Cookie</bdi> بواسطة استخدام الدالة <bdi>SetCookie</bdi>",
      options: ["صح","خطا"],
      correct:0,
-    explanation:"يتم انشاء الملفCookie بواسطة الدالة Setcookie"
+    explanation:"يتم انشاء ملف من خلال استخدام الدالة <bdi>SetCookie</bdi>"
     },
+
 
     {
      question:"المستخدم النهائي لنظام قاعدة البيانات هو الذي يقوم",
@@ -123,7 +124,7 @@ const theoryQuestions = [
     },
 
     {
-     question:"لتحديد طول النص المدخل في TextBox",
+     question:"لتحديد طول النص المدخل في <bdi>TextBox</bdi>",
      options: ["Length","Text","Long","ForeColor"],
      correct:0,
      explanation:"Text يستخدم لاسترداد النص المدخل Long هو نوع بيانات يستخدم للارقام الصحيحة ForeColor تستخدم لتعيين لون الخط"
@@ -136,11 +137,11 @@ const theoryQuestions = [
     explanation:"امر Create Table يستخدم لانشاء جدول جديد في قاعدة البيانات"
     },
 
-    {   
-     question:"لايجاد اصغر قيمة بالجدول استخدم خاصية MIN",
+   {   
+     question:"لايجاد اصغر قيمة بالجدول استخدم خاصية <bdi>MIN</bdi>",
      options: ["صح","خطا"],
      correct:0,
-    explanation:"تعني اقل قيمة MIN"
+    explanation:"تعني اقل قيمة <bdi>MIN</bdi>"
     },
 
     {
@@ -246,7 +247,152 @@ const theoryQuestions = [
     correct:1,
     explanation:"هو الأمر الأساسي لتعديل بنية الجداول في معظم أنظمة قواعد البيانات"
     }   
-    
+     {
+        question:"لطباعة البيانات في لغة <bdi>PHP</bdi> هل يمكن استخدام الامر <bdi>Print</bdi>",
+        options: ["صح","خطا"],
+        correct:0,
+        explanation:"في <bdi>PHP</bdi> نستخم الامر <bdi>Print</bdi>"
+    },
+    {
+        question:"لتخزين القيمة 56.44 فان نوع المتغير المناسب",
+        options: ["Long","Double","Integer","Boolean"],
+        correct:1,
+        explanation:"النوع Double يستخدم لتخزين الأرقام العشرية بدقة عالية في معظم لغات البرمجة"
+    },
+    {
+        question:"الخاصية <bdi>Back Color</bdi>",
+        options: ["تغير لون الخط","تغير لون الخلفية"],
+        correct:1,
+        explanation:"تستخدم <bdi>Back Color</bdi> لتغير لون الخلفية لعنصر في واجهة المستخدم",
+    },
+    {
+        question:"ناتج المعامل <bdi>and</bdi> تكون <bdi>True</bdi>اذا كانت جملتا الشرط <bdi>True</bdi>",
+        options: ["صح","خطا"],
+        correct:0,
+        explanation:"يطلع الناتج <bdi>True</bdi>"
+    },
+    {
+        question:"عند تحويل بيانات من نص الى رقم تحتفظ بالبيانات المخزنة",
+        options: ["خطا","صح"],
+        correct:1,
+        explanation:"عندما تقوم بتحويل بيانات من نص الى رقم مثل <bdi>Integer</bdi> فان البيانات المخزنة تكون مماثلة تماما مع الرقم الذي تم تحويلة"
+    },
+    {
+        question:"اي من الازواج التالية يمثل علاقة <bdi>1:M</bdi>",
+        options: ["الدولة و العاصمة","الشخص ورقم الهوية","السيارة و الاطارات",  "الطلاب و المواد الدراسية" ],
+        correct:2,
+        explanation:"حيث ان لكل سيارة عدة اطارات"
+    },
+    {
+        question:"الامر الذي يستخدمة مسئول قاعدة البيانات لحذف الصلاحيات من المستخدم",
+        options: ["Grant","Delete","Revoke"],
+        correct:2,
+        explanation:"امر <bdi>Revoke</bdi> يستخدم في <bdi>SQL</bdi> لسحب او الغاء الصلاحيات التي منحت سابفا لمستخدم معين على قاعدة البيانات او جدول معين"
+    },
+    {
+        question:"اي من الاتي صحيح عند الغاء الاعمدة",
+        options: ["يمكن الغاء اكثر من عمود واحد في الامر الواحد","لايمكن استعادة العمود بعد الغاؤه","العمود المراد الغاؤه يجب ان يكون فارغا","يجب ان تبقى عمود واحد على الاقل بعد عملية الالغاء"],
+        correct:1,
+        explanation:"لايمكن استعادة العمود اذا تم الغاؤه"
+    },
+    {
+        question:"الخاصية <bdi>ListView</bdi> تمكنك من عرض العناصر على شكل ايقونات كما يفعل سطح المكتب و مستكشف النظام",
+        options: ["صح","خطا"],
+        correct:0,
+        explanation:"تمكنك من عرض العناصر على شكل ايقونات"
+
+    },
+    {
+        question:"دالة تجمعية تستخدم لاسترجاع عدد السجلات في جدول ما",
+        options: ["Sum()","Avg()","Count()","Max()"],
+        correct:2,
+        explanation:"Count تسترجع عدد السجلات في جدول ما"
+    },
+    {
+        question:"اي من ادوات التحكم التالية تستخدم لعرض نص ثابت لايمكن للمستخدم تغيره",
+        options: ["TextBox","Button","List","Label"],
+        correct:3,
+        explanation:"تستخدم في واجهات المستخدم لعرض نص ثابت لايمكن للمستخدم تغيره Label"
+    },
+    {
+        question:"اي من الكلمات المحجوزة في لغة <bdi>SQL</bdi> ",
+        options: ["INSERT","MAKE","VAR","STRING"],
+        correct:0,
+        explanation:"تعتبر <bdi>INSERT</bdi> من الكلمات المجوزة في <bdi>SQL</bdi>"
+    },
+    {
+        question:"هل لغة <bdi>Java</bdi> حساسة في حالة الاحرف",
+        options: ["صح","خطا"],
+        correct:0,
+        explanation:"java حساسة في حالة الاحرف"
+    }       
+    {
+        question:"لاستقبال مدخلات نصية من المستخدم في لغة <bdi>VB.Net</bdi>",
+        options: ["Check Box","List Box","Input Box","Msg Box"],
+        correct:2,
+        explanation:"<bdi>InputBox</bdi> هي دالة في <bdi>VB.NET</bdi> تستخدم لعرض نافذة يمكن من خلالها للمستخدم ادخال بيانات نصية"
+
+    },
+    {
+        question:"<bdi>Arr(3,4)</bdi>",
+        options: ["عدد الصفوف 3 وعدد الاعمدة 4","عدد الصفوف 4 و عدد الاعمدة 5","عدد الصفوف 4 و عدد الاعمدة 3","عدد الصفوف 5 و عدد الاعمدة 4"],
+        correct:0,
+        explanation:"<bdi>Arr(3,4)</bdi> يعبر عن مصفوفة او جدول يحتوي على 3 صفوف و 4 اعمدة"
+    },
+    {
+        question:"يستخدم شكل المستطيل للجمل الشرطية في المخططات الانسابية <bdi>(FLOW CHART)</bdi>",
+        options: ["خطا","صح"],
+        correct:0,
+        explanation:"يستخدم لتمثيل عمليات <bdi>(Operations)</bdi> بينما للجمل الشرطية يستخدم شكل المعين"
+    },
+    {
+        question:"في المخططات الانسيابية <bdi>Flow Chart</bdi> الشكل المستخدم لبداية و نهاية البرنامج هو",
+        options: ["مستطيل","معين","بيضاوي","متوازي اضلاع"],
+        correct:2,
+        explanation:"البيضاوي يستخدم لتمثيل بداية و نهاية البرنامج"
+    },
+    {
+        question:"ماهي قيمة <bdi>SelectedIndex</bdi> اذا تم اختيار العنصر الاخير من قائمة <bdi>(List)</bdi> تحتوي على اربعة عناصر",
+        options: ["3","4","5","0"],
+        correct:0,
+        explanation:"بشكل عام الفهارس تبدا من الصفر لذا اذا كان لديك قائمة من اربعة عناصر فان العنصر الاخير سيكون 3"
+    },
+    {
+        question:"هو خطا يمكن تصحيحة بسهولة اذا توقف تشغيل البرنامج",
+        options: ["خطا التركيب النحوي <bdi>Syntax Error</bdi>","خطا منطقي <bdi>Logical Error</bdi>","خطا وقت التشغيل <bdi>Run-Time Error</bdi>","خطا المناطق الممتدة <bdi>Overflow</bdi>"],
+        correct:0,
+        explanation:"خطا التركيب النحوي يحدث عندما يكون هناك خطا في كتابة الشفرة"
+    },
+    {
+        question:"هل الجملة التالية صحيحة <bdi>Dim x As Integer+=10</bdi>",
+        options: ["صح","خطا"],
+        correct:1,
+        explanation:"لان علامة  الزيادة لاتستخدم مع تعريف المتغيرات"
+    },
+    {
+        question:"في لغة البرمجة <bdi>Java</bdi> يمكن تعريف مصفوفات ذات اكثر من بعد واحد",
+        options: ["خطا","صح"],
+        correct:1,
+        explanation:"نعم، في Java يمكن تعريف مصفوفات ذات أكثر من بعد، مثل int[][] arr = new int[3][4];"
+    },
+    {
+        question:"<bdi>Session</bdi> هو وسيلة لتخزين المعلومات ليتم استخدامها عبر صفحات متعددة و يتم تخزينها في",
+        options: ["جهاز المستخدم","الخادم","متغير","في كائن <bdi>Object</bdi>"],
+        correct:1,
+        explanation:"يتم تخزينها في الخادم"
+    },
+    {
+        question:"ماهي نتيجة تطبيق العملية الحسابية <bdi>Sa=10*(6-4)</bdi>",
+        options: ["10","100","2","20"],
+        correct:3,
+        explanation:"النتيجة هي 20"
+    },
+    {
+        question:"تحتاج الاستعلامات الفرعية المرتبطة باستعلام رئيسي للكثير من الوقت و المعالجة بالمقارنة مع الاستعلامات غير المرتبطة باستعلامها الرئيسي",
+        options: ["صح","خطا"],
+        correct:0,
+        explanation:"لان الاستعلامات المرتبطة تنفذ مرة لكل صف فتكون ابطا من غير المرتبطة"
+    }
 ];
 
 const practicalQuestions = [
