@@ -245,7 +245,7 @@ const theoryQuestions = [
     options:["grant","ALTER","DENY","Create"], 
     correct:1,
     explanation:"هو الأمر الأساسي لتعديل بنية الجداول في معظم أنظمة قواعد البيانات"
-    }        
+    }   
     
 ];
 
