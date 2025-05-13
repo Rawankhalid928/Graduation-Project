@@ -95,8 +95,8 @@ const theoryQuestions = [
      correct:1,
     explanation:"تستخدم شكل مستطيل"
     },
-    {
-     question:"في لغة البرمجة java المتغيرات التي يتم تعريفها داخل الدالة loop يمكن استخدامها خارج الدالة",
+        {
+     question:"في لغة البرمجة <bdi>Java</bdi> المتغيرات التي يتم تعريفها داخل دالة <bdi>loop</bdi> يمكن استخدامها خارج الدالة",
      options: ["صح","خطا"],
      correct:1,
      explanation:"لايمكن استخدامها خارج الدالة"
