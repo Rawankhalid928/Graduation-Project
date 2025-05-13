@@ -3,7 +3,7 @@ const theoryQuestions = [
      question:" جميع المتغيرات في لغة البرمجة <bdi>PHP</bdi> تبدأ برمز؟ ",
      options: ["&","/*","$","!"],
      correct:2,
-    explanation:"في لغة PHP، أي متغير لازم يبدأ بالرمز $"
+    explanation:"في لغة <bdi>PHP</bdi> ، أي متغير لازم يبدأ بالرمز <bdi>$</bdi>"
     },
     {
         question: "لربط جدولين لاسترجاع القيم منها نستخدم الكلمة الرئيسية",
