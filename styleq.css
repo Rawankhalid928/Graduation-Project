@@ -18,6 +18,8 @@ body {
     max-width: 600px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    max-height: 100vh;
 }
 
 button {
