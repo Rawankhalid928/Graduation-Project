@@ -499,8 +499,13 @@ function loadNextQuestion() {
 
 function showReport() {
     const questionBox = document.getElementById("question-box");
-    questionBox.innerHTML = "<h2>النتيجة</h2>";
-
+questionBox.innerHTML = `
+    <h2>نتيجة الاختبار:</h2>
+    <div id="result-buttons" style="margin: 20px 0; text-align: center;">
+        <button onclick="window.location.href='index.html'" style="padding: 10px 20px; background: #d7b52c ; color: rgb(77, 29, 55) ; border: none; border-radius: 5px; cursor: pointer;"> 🏠 الصفحة الرئيسية</button>
+        <button onclick="window.location.href='questions.html'" style="padding: 10px 20px; background:  #d7b52c ;  color: rgb(77, 29, 55) ; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">❔العودة للأسئلة</button>
+    </div>
+`;
     userAnswers.forEach((answer, index) => {
         const isCorrect = answer.selected === answer.correct;
 
