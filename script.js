@@ -243,7 +243,7 @@ const theoryQuestions = [
         question:"لطباعة البيانات في لغة <bdi>PHP</bdi> هل يمكن استخدام الامر <bdi>Print</bdi>",
         options: ["صح","خطا"],
         correct:0,
-        explanation:"في <bdi>PHP</bdi> نستخم الامر <bdi>Print</bdi>"
+        explanation:"في <bdi>PHP</bdi> نستخدم الامر <bdi>Print</bdi>"
     },
     {
         question:"لتخزين القيمة 56.44 فان نوع المتغير المناسب",
@@ -276,10 +276,10 @@ const theoryQuestions = [
         explanation:"حيث ان لكل سيارة عدة اطارات"
     },
     {
-        question:"الامر الذي يستخدمة مسئول قاعدة البيانات لحذف الصلاحيات من المستخدم",
+        question:"الامر الذي يستخدمة مسؤول قاعدة البيانات لحذف الصلاحيات من المستخدم",
         options: ["Grant","Delete","Revoke"],
         correct:2,
-        explanation:"امر <bdi>Revoke</bdi> يستخدم في <bdi>SQL</bdi> لسحب او الغاء الصلاحيات التي منحت سابفا لمستخدم معين على قاعدة البيانات او جدول معين"
+        explanation:"امر <bdi>Revoke</bdi> يستخدم في <bdi>SQL</bdi> لسحب او الغاء الصلاحيات التي منحت سابقا لمستخدم معين على قاعدة البيانات او جدول معين"
     },
     {
         question:"اي من الاتي صحيح عند الغاء الاعمدة",
