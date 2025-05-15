@@ -382,7 +382,19 @@ const theoryQuestions = [
 ];
 
 const practicalQuestions = [
-                      {
+         {
+        question:"ماهي مخرجات البرنامج التالي <pre><code>< ?php $str='Hello World';<br> $result= strlen($str);<br> Echo $result?></code></pre>",
+        options:["Hello World","10","11","World Hello"],
+        correct:2,
+        explanation:"<bdi>Strlen</bdi> تحسب عدد الاحرف ومن ضمنها الفراغ"
+     },
+{
+    question: "عدد مرات طباعة علامة * من الكود التالي <pre><code>For(int i = 0; i &lt; 3; i++) <br>{ System.out.println();<br>For(int x = 0; x &lt; 3; x++) <br>{ System.out.println(&quot;*&quot;);}}</code></pre>",
+    options: ["1", "3", "6", "9"],
+    correct: 3,
+    explanation: "لحلقة الخارجية 3 مرات، والداخلية 3 مرات، 3 × 3 = 9 مرات طباعة *"
+},
+{
         question:"ماهي مخرجات الكود التالي <pre><code> < ?php $array[0]='Sara';<br> $array[1]='Bayan';<br> $array[2]='Reem';<br> $array[3]='Noura';<br> $result=count($array);<br> echo $result ?> </code></pre>",
         options:["3","4","Sara,Bayan,Reem,Noura","Error"],
         correct:1,
@@ -423,19 +435,7 @@ const practicalQuestions = [
      options: ["36","5","3","1"],
      correct:3,
      explanation:" ترجع الباقي عند القسمة MOD"
-     },
-     {
-        question:"ماهي مخرجات البرنامج التالي <pre><code>< ?php $str='Hello World'; $result= strlen($str); Echo $result?></code></pre>",
-        options:["Hello World","10","11","World Hello"],
-        correct:2,
-        explanation:"<bdi>Strlen</bdi> تحسب عدد الاحرف ومن ضمنها الفراغ"
-     },
-     {
-        question:"عدد مرات طباعة علامة <bdi>"*"</bdi> من الكود التالي <pre><code> For(int i = 0; i<3; i++) <br> { System.out.println();<br> For(int x = 0; x<3; x++) <br>{ System.out.println("*");}}</code></pre>",
-        options:["1","3","6","9"],
-        correct:3,
-        explanation:"لحلقة الخارجية 3 مرات، والداخلية 3 مرات، 3 × 3 = 9 مرات طباعة *"
-     }      
+     }
 ];
 
 let current = 0;
@@ -515,7 +515,7 @@ questionBox.innerHTML = `
     <h2>نتيجة الاختبار:</h2>
     <div id="result-buttons" style="margin: 20px 0; text-align: center;">
         <button onclick="window.location.href='index.html'" style="padding: 10px 20px; background: #d7b52c ; color: rgb(77, 29, 55) ; border: none; border-radius: 5px; cursor: pointer;"> 🏠 الصفحة الرئيسية</button>
-        <button onclick="window.location.href='questions.html'" style="padding: 10px 20px; background:  #d7b52c ;  color: rgb(77, 29, 55) ; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">❔العودة للأسئلة</button>
+        <button onclick="window.location.href='Questions.html'" style="padding: 10px 20px; background:  #d7b52c ;  color: rgb(77, 29, 55) ; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">❔العودة للأسئلة</button>
     </div>
 `;
     userAnswers.forEach((answer, index) => {
