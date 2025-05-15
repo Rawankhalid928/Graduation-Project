@@ -425,37 +425,13 @@ const practicalQuestions = [
      explanation:" ترجع الباقي عند القسمة MOD"
      },
      {
-        question:"ما ناتج تنفيذ الكود التالي <bdi>Dim Sum,Counter As Integer sum=0 For Counter=0 To 100 Step 1 sum=sum + Counter if Sum > 5 Then Exit for End if</bdi>",
-        options:["5","6","10"],
-        correct:1,
-        explanation:"الحلقة تبدا من 0 و تجمع القيم  اول ما <bdi>sum>5</bdi> يتم الخروج و تكون القيمة 6"
-     },
-     {
-        question:"ماهي قيمة <bdi>Value1</bdi> في العملية التالية <bdi>Dim Value2 As Boolean = (10 > 9 And 5 - 8)</bdi>",
-        options:["Error","12","5"],
-        correct:0,
-        explanation:"لان 5-8  يعطي عدد و ليس <bdi>Boolean</bdi> و <bdi> And</bdi> يتوقع <bdi>Boolean</bdi> من الطرفين "
-     },
-     {
-        question:"ما ناتج <bdi>A</bdi> عند تنفيذ الكود التالي <bdi>Dim a,s As Integer Do Until a=10 a = a +1 s = s + a * 3 If s = 45 Then Exit Do Loop</bdi>",
-        options:["6","3","5"],
-        correct:2,
-        explanation:"قيمة <bdi>a</bdi> هي 5 عند الخروج من الحلقة"
-     },
-     {
-        question:"ماهي نتيجة <bdi>f</bdi> في البرنامج التالي <bdi>Dim f As Integer TextBox1.text=4 textbox2.text=2 f=Val(TextBox1.text)Mod Val(TextBox2.text)</bdi>",
-        options:["0","1"],
-        correct:0,
-        explanation:"قيمة <bdi>f</bdi> هي <bdi>0</bdi> لان <bdi>4</bdi> تقبل القسمة على <bdi>2</bdi> بدون باقي"
-     },
-     {
-        question:"ماهي مخرجات البرنامج التالي <bdi><?php $str='Hello World'; $result= strlen($str); Echo $result?></bdi>",
+        question:"ماهي مخرجات البرنامج التالي <pre><code>< ?php $str='Hello World'; $result= strlen($str); Echo $result?></code></pre>",
         options:["Hello World","10","11","World Hello"],
         correct:2,
         explanation:"<bdi>Strlen</bdi> تحسب عدد الاحرف ومن ضمنها الفراغ"
      },
      {
-        question:"عدد مرات طباعة علامة <bdi>"*"</bdi> من الكود التالي <bdi>For(int i = 0; i<3; i++){ System.out.println(); For(int x = 0; x<3; x++){ System.out.println("*");}}</bdi>",
+        question:"عدد مرات طباعة علامة <bdi>"*"</bdi> من الكود التالي <pre><code> For(int i = 0; i<3; i++) <br> { System.out.println();<br> For(int x = 0; x<3; x++) <br>{ System.out.println("*");}}</code></pre>",
         options:["1","3","6","9"],
         correct:3,
         explanation:"لحلقة الخارجية 3 مرات، والداخلية 3 مرات، 3 × 3 = 9 مرات طباعة *"
