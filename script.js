@@ -382,6 +382,12 @@ const theoryQuestions = [
 ];
 
 const practicalQuestions = [
+                      {
+        question:"ماهي مخرجات الكود التالي <pre><code> < ?php $array[0]='Sara';<br> $array[1]='Bayan';<br> $array[2]='Reem';<br> $array[3]='Noura';<br> $result=count($array);<br> echo $result ?> </code></pre>",
+        options:["3","4","Sara,Bayan,Reem,Noura","Error"],
+        correct:1,
+        explanation:"دالة <bdi>count</bdi> تحسب عدد العناصر في المصفوفة، وعددهم 4"
+     },
    {
         question:"اي من الخيارات التالية يقوم بعرض شاشة حوار لاختيار لون معين ",
         options: ["()colorDialog1.showDialog","()showDialog","()showDialog.colorDialog1","()Dialog"],
@@ -417,12 +423,6 @@ const practicalQuestions = [
      options: ["36","5","3","1"],
      correct:3,
      explanation:" ترجع الباقي عند القسمة MOD"
-     },
-      {
-        question:"ماهي مخرجات الكود التالي <bdi><?php $array[0]='Sara'; $array[1]='Bayan'; $array[2]='Reem'; $array[3]='Noura'; $result=count($array); echo $result ?></bdi>",
-        options:["3","4","Sara,Bayan,Reem,Noura","Error"],
-        correct:1,
-        explanation:"دالة <bdi>count</bdi> تحسب عدد العناصر في المصفوفة، وعددهم 4"
      },
      {
         question:"ما ناتج تنفيذ الكود التالي <bdi>Dim Sum,Counter As Integer sum=0 For Counter=0 To 100 Step 1 sum=sum + Counter if Sum > 5 Then Exit for End if</bdi>",
