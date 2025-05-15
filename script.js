@@ -365,7 +365,7 @@ const theoryQuestions = [
         question:"في لغة البرمجة <bdi>Java</bdi> يمكن تعريف مصفوفات ذات اكثر من بعد واحد",
         options: ["خطا","صح"],
         correct:1,
-        explanation:"نعم، في Java يمكن تعريف مصفوفات ذات أكثر من بعد، مثل int[][] arr = new int[3][4];"
+        explanation:"نعم، في Java يمكن تعريف مصفوفات ذات أكثر من بعد، مثل int[][] arr = new int[3][4]"
     },
     {
         question:"<bdi>Session</bdi> هو وسيلة لتخزين المعلومات ليتم استخدامها عبر صفحات متعددة و يتم تخزينها في",
