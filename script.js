@@ -446,7 +446,7 @@ const practicalQuestions = [
         question:"ما نتيجة الكود <bdi>x>y&&a</bdi>",
         options:["x>y=true and a","x>y=false and a"],
         correct:0,
-        explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
+        explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النتيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
      },
      {
         question:"العملية التي يقوم بها الامر التالي <pre><code> <?php define('var','program');?></code></pre>",
