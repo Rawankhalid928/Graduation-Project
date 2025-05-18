@@ -1,14 +1,14 @@
 
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: rgb(255, 255, 255);
-  overflow-x: hidden;
-  direction: rtl;
-}
-/*بداية زر الدخول*/.uiverse {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+    /*بداية زر الدخول*/.uiverse {
   --duration: 7s;
   --easing: linear;
   --c-color-1: #010450;
@@ -566,166 +566,224 @@ body{
   .nav{
     right: 30px;
   }
-  h1{
-    font-size: 9vw;
-    -webkit-text-stroke: 2px transparent;
-    text-stroke: 2px transparent;
-    -webkit-text-fill-color: #ffeba7;
-    text-fill-color: #ffeba7;
-    color: #ffeba7;
-  }
   .nav ul li a{
     font-size: 8vh;
   }
 }
 /*نهاية المنيو*/
+/*اول div  بداية*/
 
-/*بداية البوكس الاول*/
-.robot{
-  position: absolute;
-  left: 290px;
-  width: 100%; /* عرض الروبوت */
-  height: 750px; /* ارتفاع الروبوت */
-  transform: scale(0.5); 
-}
 .div1 {
-  background-color: black; /* خلفية باللون الأسود */
-  width:100%; /* تحديد العرض */
-  height: 551px; /* تحديد الارتفاع */
-  position: relative; /* لتحديد الموقع */
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.divbox{
-  position: absolute;
-  top: 435px;
-  left: 1150px;
-  color: black;
+  height: 100vh;
+  width: 100vw;
   background-color: black;
-}
-.h1 {
-  position: absolute;
-  left: 200px;
-  font-size: 2rem;
-  color: azure;
-}
-.p1{
-  position: absolute;
-  top: 330px;
-  left: 50px;
-  direction: rtl;
-  width: 400px;
-  font-size: 20px;
-  color: azure;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; /* في البداية، النص غير مرئي */
-  }
-  100% {
-    opacity: 1; /* في النهاية، النص يصبح مرئي */
-  }
-}
-/*نهاية البوكس الاول*/
-
-/*بداية البوكس الثاني*/
-.div2 {
-  background-color: rgb(255, 255, 255); /* خلفية باللون الأسود */
-  width:100%; /* تحديد العرض */
-  height: 551px; /* تحديد الارتفاع */
-  position: relative; /* لتحديد الموقع */
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh; /* ارتفاع الشاشة بالكامل */
+  justify-content: space-between;
+  padding: 0 50px;
+  background-image: url(img/brobot.png) ;
+  background-repeat: no-repeat;
+background-position: right 20px bottom 50px;
+ background-size: 500px auto;
 }
-.control{
-  position: absolute;
-  right: 350px;
-  width:1300px; /* عرض الروبوت */
-  height: 1300px; /* ارتفاع الروبوت */
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;
+}
+.right-side{
+  display: flex;
+  align-items: center;
+}
+
+.h1 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+.p1 {
+  font-size: 1.2rem;
+  max-width: 400px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 1.8;
+}
+
+.robot {
+  max-width: 500px;
+  height: 750px;
   transform: scale(0.4);
 }
+
+ /*اول div نهاية*/
+
+/*بداية ديف 2*/
+.div2 {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: #d7b52c;
+  align-items: center;
+}
 .gamep{
-  color: rgb(77, 29, 55);
-  position: relative;
-  width: 500px;
+  font-size: 1.3rem;
   direction: rtl;
-  transform: translate(20px , -120px);
+  max-width: 600px;
   font-weight: bold;
-  font-size: 1.2rem;
 }
-.card1 {
-  max-width: 200px;
-  transform: translate(500px , 100px);
-}
-.card1 p{
-  color: rgb(77, 29, 55);
-  font-weight: bold;
+.right-side2{
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+  gap: 100px;
 }
-.card1 h2{
-  color:#d7b52c;
-  text-align:center ;
-}
-.card2 {
-  max-width: 200px;
-  transform: translate(400px , 100px);
-}
-.card2 p{
-  color: rgb(77, 29, 55);
-  font-weight: bold;
-  text-align: center;
-}
-.card2 h2{
-  color:#d7b52c;
-  text-align:center ;
-}
-.mario{
-  width: 200px;
-  height: 100px;
-  display: flex
-}
-.fight{
-  width: 200px;
-  height: 100px;
-  transform: translate(40px , 10px);
-}
-/*نهاية البوكس الثاني*/
+.row{
+  display: flex;
+  flex-direction: row;
 
-/*بداية البوكس الثالث*/
+}
+.p2{
+  font-size: 1rem;
+  max-width: 200px;
+  color: rgb(255, 255, 255);
+}
+.card1{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.card2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .control {
+    width: 30%;     
+    height: auto;    
+}
+    .mario {
+    width: 30%;     
+    height: auto;     
+  }
+      .fight {
+    width: 30%;     
+    height: auto;     
+  }
+
+/*نهاية ديف 2*/
+
+/*بداية ديف 3*/
 .div3 {
-  background-color: black; /* خلفية باللون الأسود */
-  width:100%; /* تحديد العرض */
-  height: 551px; /* تحديد الارتفاع */
-  position: relative; /* لتحديد الموقع */
   display: flex;
-  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: black;
   align-items: center;
 }
+/*نهاية ديف 3*/
 
-/*نهاية البوكس الثالث*/
-
-/*بداية البوكس الرابع*/
+/*بداية ديف 4*/
 .div4 {
-  background-color: rgb(255, 255, 255); /* خلفية باللون الأسود */
-  width:100%; /* تحديد العرض */
-  height: 551px; /* تحديد الارتفاع */
-  position: relative; /* لتحديد الموقع */
   display: flex;
-  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: black;
   align-items: center;
 }
-.g1{
-  position: absolute;
-  left: 910px;
-  transform: scale(0.9);
+/*نهاية ديف 4*/
+.robot2 {
+  display: none;
 }
-.g2{
-  position: absolute;
-  right: 930px;
-  transform: scale(0.9);
+
+    @media (max-width: 768px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-/*نهاية البوكس الرابع*/
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.uiverse{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+.menu-icon:checked + label,
+.menu-icon:not(:checked) + label {
+    right: 52px;
+    left: auto;
+}
+  .nav {
+    right: 30px;
+    left: auto;
+  }
+  .nav ul li a {
+  font-size: 5vh;
+}
+/* الحاوية العامة */
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+/* كل قسم */
+.div1, .div2, .div3, .div4 {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: none;
+}
+/*بداية اول ديف*/
+  .left-side {
+    order: 2;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+
+  .right-side {
+    order: 1;
+    margin-top: 70px;
+  }
+  
+  .robot {
+    width: 50vw; 
+  }
+
+  spline-viewer.robot {
+    display: none;
+  }
+  .robot2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    height: auto;
+    margin-top: 110px;
+  }
+
+  .h1 {
+    font-size: 1.5rem; 
+  }
+
+  .p1 {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  /*نهاية اول ديف*/
+  /*بداية ثاني ديف*/
+  .control{
+   width: 250px;
+  }
+  /*نهاية ثاني ديف*/
+    }
