@@ -443,13 +443,13 @@ const practicalQuestions = [
         explanation:"لان 4*4=16 و 19-16=3"
      },
      {
-        question:"ما نتيجة الكود <code>x>y&&a</code>",
+        question:"ما نتيجة الكود x>y&&a",
         options:["x>y=true and a","x>y=false and a"],
         correct:0,
         explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النتيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
      },
      {
-        question:"العملية التي يقوم بها الامر التالي <code> <?php define('var','program');?></code>",
+        question:"العملية التي يقوم بها الامر التالي <?php define('var','program');?>",
         options:["تعريف متغير ثابت بمسمى var و اسناد قيمة له","تعريف متغير بمسمى var,program","دمج الكلمتين var,program لتصبح varprogram","Error"],
         correct:0,
         explanation:"لان <bdi>define</bdi> تستخدم لتعريف ثابت و ليس متغير عادي"
