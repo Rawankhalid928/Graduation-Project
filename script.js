@@ -435,7 +435,61 @@ const practicalQuestions = [
      options: ["36","5","3","1"],
      correct:3,
      explanation:" ترجع الباقي عند القسمة MOD"
-     }
+     },
+      {
+        question:"ماهو قيمة المتغير <bdi>S</bdi> بعد تنفيذ العملية التاليه <bdi>int S=19%4;</bdi>",
+        options:["2","4","3","4.75"],
+        correct:2,
+        explanation:"لان 4*4=16 و 19-16=3"
+     },
+     {
+        question:"ما نتيجة الكود <bdi>x>y&&a</bdi>",
+        options:["x>y=true and a","x>y=false and a"],
+        correct:0,
+        explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
+     },
+     {
+        question:"العملية التي يقوم بها الامر التالي <pre><code> <?php define('var','program');?></code></pre>",
+        options:["تعريف متغير ثابت بمسمى var و اسناد قيمة له","تعريف متغير بمسمى var,program","دمج الكلمتين var,program لتصبح varprogram","Error"],
+        correct:0,
+        explanation:"لان <bdi>define</bdi> تستخدم لتعريف ثابت و ليس متغير عادي"
+     },
+     {
+        question:"طريقة الكتابة الصحيحة لعبارة قيمة المتغير <bdi>X</bdi> اكبر من <bdi>9</bdi> او اصغر من <bdi>4</bdi>",
+        options:["X<4>9","X<9>4","X>9 && X<4","X>9||X<4"],
+        correct:3,
+        explanation:"لان علامة || تستخدم لكلمة او"
+     },
+     {
+        question:"ماهي مخرجات البرنامج التالي <pre><code><?php $a=12; Echo(gettype($a));?></code></pre>",
+        options:["Boolean","String","Integer","Long"],
+        correct:2,
+        explanation:"gettype($a) ترجع integer"
+     },
+     {
+        question:"ماهو الخطا في الكود التالي <pre><code><?php $x=100;<br>$y=200;<br> if($x>50)&&($y>=100)<br> { echo'both value is grater than 50';}?></code></pre>",
+        options:["استخدام الدالة الشرطية if الصحيح استخدام Switch","استخدام الدالة الشرطية if الصحيح استخدام التكرار for","if($x>50 && $y>=100)"],
+        correct:2,
+        explanation:"تستخدم تركيب <bdi>if</bdi> بشكل صحيح و تحتوي على شرطين باستخدام <bdi>&& (and)</bdi>"
+     },
+     {
+        question:"اي من التالي يعتبر تعريف صحيح لمصفوفة احادية",
+        options:["int[]mylist={'1','2','3'};","int[]mylist=(1,2,3);","int mylist[][]={1,2,3};","int mylist[]={1,2,3};"],
+        correct:4,
+        explanation:"لان النوع <bdi>int</bdi> صحيح التسمية <bdi>[]mylist</bdi> صحيحة و القيم المحصورة داخل <bdi>{}</bdi> بشكل سليم"
+     },
+     {
+        question:"ماهي الكتابة الصح للكود التالي <bdi>select*from Courses where mark between 90 and 100</bdi>",
+        options:["Select*from Courses where mark>=90","Select*from Courses where mark>90 or mark<=100","Select*from Courses where mark in (90,100)","Select*from Courses where mark>=90 and mark<=100"],
+        correct:4,
+        explanation:"لانها تعطي نفس نتيجة <bdi>Between 90 and 100</bdi>"
+     },
+     {
+        question:"ماهو ناتج الكود التالي <bdi>int i=5; int x =15;if(i<=5 && x >=15){i--;System.out.print(i--);}</bdi>",
+        options:["3","4","2"],
+        correct:1,
+        explanation:"لان الامر <bdi>System.out.print(i--)</bdi> يطبع القيمة اولا ثم ينقصها"
+     }      
 ];
 
 let current = 0;
