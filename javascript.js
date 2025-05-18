@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.matchMedia().add("(min-width: 787px)", () => {
+  // هنا تكتب كل أكواد GSAP اللي تبغاها تشتغل على اللابتوب فقط
 
 
 /*فنكشين حق البكوسات div*/
@@ -35,7 +37,7 @@ elements.forEach(selector => {
         scrub:true,
         toggleActions: "restart pause reverse pause"
     },
-    y: -250, // تغيير هذه القيمة لتحديد المسافة التي يظهر منها العنصر
+    y: -100, // تغيير هذه القيمة لتحديد المسافة التي يظهر منها العنصر
     duration: 3,
   });
 
@@ -100,4 +102,5 @@ gsap.from(".h1", {
     },
     x: -50, // تغيير هذه القيمة لتحديد المسافة التي يظهر منها العنصر
     duration: 0.1,
+  });
   });
