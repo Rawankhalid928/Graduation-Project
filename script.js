@@ -449,7 +449,7 @@ const practicalQuestions = [
         explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النتيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
      },
      {
-        question:"العملية التي يقوم بها الامر التالي <pre><code><?php define('var','program');?></code></pre>",
+        question:"العملية التي يقوم بها الامر التالي <pre><code>&lt;?php define('var','program');?&gt;</code></pre>",
         options:["تعريف متغير ثابت بمسمى var و اسناد قيمة له","تعريف متغير بمسمى var,program","دمج الكلمتين var,program لتصبح varprogram","Error"],
         correct:0,
         explanation:"لان <bdi>define</bdi> تستخدم لتعريف ثابت و ليس متغير عادي"
@@ -461,7 +461,7 @@ const practicalQuestions = [
         explanation:"لان علامة || تستخدم لكلمة او"
      },
      {
-        question:"ماهي مخرجات البرنامج التالي <pre><code><?php $a=12; Echo(gettype($a));?></code></pre>",
+        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php $a=12; Echo(gettype($a));?&gt;</code></pre>",
         options:["Boolean","String","Integer","Long"],
         correct:2,
         explanation:"gettype($a) ترجع integer"
