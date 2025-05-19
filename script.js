@@ -449,7 +449,7 @@ const practicalQuestions = [
         explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النتيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
      },
      {
-        question:"العملية التي يقوم بها الامر التالي <?php define('var','program');?>",
+        question:"العملية التي يقوم بها الامر التالي <pre><code><?php define('var','program');?></code></pre>",
         options:["تعريف متغير ثابت بمسمى var و اسناد قيمة له","تعريف متغير بمسمى var,program","دمج الكلمتين var,program لتصبح varprogram","Error"],
         correct:0,
         explanation:"لان <bdi>define</bdi> تستخدم لتعريف ثابت و ليس متغير عادي"
@@ -461,7 +461,7 @@ const practicalQuestions = [
         explanation:"لان علامة || تستخدم لكلمة او"
      },
      {
-        question:"ماهي مخرجات البرنامج التالي <code><?php $a=12; Echo(gettype($a));?></code>",
+        question:"ماهي مخرجات البرنامج التالي <pre><code><?php $a=12; Echo(gettype($a));?></code></pre>",
         options:["Boolean","String","Integer","Long"],
         correct:2,
         explanation:"gettype($a) ترجع integer"
@@ -489,7 +489,44 @@ const practicalQuestions = [
         options:["3","4","2"],
         correct:1,
         explanation:"لان الامر <bdi>System.out.print(i--)</bdi> يطبع القيمة اولا ثم ينقصها"
-     }      
+     },
+      {
+        question:"ماهي مخرجات البرنامج التالي <bdi>for(int x = 12; x > 0; x = x/2){ System.out.print(x);}</bdi>",
+        options:["136","631","13612","12631"],
+        correct:3,
+        explanation:"لأن البرنامج يطبع 12 6 3 1"
+     },
+     {
+        question:"ماهي مخرجات البرنامج التالي <bdi>$x=1; $y=2; echo \"$x+$y\"=.($+$y);</bdi>",
+        options:["$x+$y=3","3=3","1+2=3","1+2=1+2"],
+        correct:2,
+        explanation:"الجمع له أسبقية أعلى، ولما يتعامل مع نص في عملية حسابية، يحاول يستخلص قيمة رقمية من بداية النص، وإن لم يكن نصًا يبدأ برقم، يأخذ صفر. ثم يُتم العملية"
+     },
+     {
+        question:"يمكن الوصول للعنصر الخامس في المصفوفة التالية باستخدام <bdi>int x []=new int[5];</bdi>",
+        options:["int[5]","x[5]","x[4]"],
+        correct:2,
+        explanation:"لأن المصفوفات تبدأ العد من 0 و العنصر الخامس يكون موقعة 4"
+     },
+     {
+        question:"لتعديل درجات المتدربين في الجدول <bdi>(Students)</bdi> بحيث تكون 20 درجة للمتدربين الذين حصلو على اقل من 20 درجة في العمود <bdi>(Degree)</bdi> نستخدم الامر",
+        options:["UPDATE Students SET Degree=20 Where Degree> 20;","UPDATE Students SET Degree=20 WHERE Degree< 20;"," UPDATE Students Degree=20 WHERE Degree> 20;","UPDATE Students WHERE Degree< 20 SET Degree=20;"],
+        correct:1,
+        explanation:"لأن لتحديث الجدول <bdi>Update</bdi> لتحديد القيمة الجديدة <bdi>Set</bdi> لتحديد الصفوف التي ينطبق عليها الشرط <bdi>Where</bdi>"
+     },
+     {
+        question:"قيمة <bdi>X</bdi> عند تنفيذ العملية الحسابية التالية في <bdi>VB.NET x=5+(-3*(412))</bdi>",
+        options:["19","-24","-43","29","-1231"],
+        correct:4,
+        explanation:"لأن نبدأ بالأس ثم نضرب و نجمع"
+     },
+     {
+        question:"كم مرة يقوم بطباعة الكود التالي <bdi>for(x = 0; x < 3; x++) for(y = 0; y < 3; ++y)</bdi>",
+        options:["4","6","8","9"],
+        correct:3,
+        explanation:"لأن <bdi>3</bdi> مرات للحلقة الأولى و كل مرة منها <bdi>3</bdi> مرات للحلقة الثانية 3*3=9"
+     }
+          
 ];
 
 let current = 0;
