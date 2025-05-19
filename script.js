@@ -475,13 +475,13 @@ const practicalQuestions = [
      {
         question:"اي من التالي يعتبر تعريف صحيح لمصفوفة احادية",
         options:["int[]mylist={'1','2','3'};","int[]mylist=(1,2,3);","int mylist[][]={1,2,3};","int mylist[]={1,2,3};"],
-        correct:4,
+        correct:3,
         explanation:"لان النوع <bdi>int</bdi> صحيح التسمية <bdi>[]mylist</bdi> صحيحة و القيم المحصورة داخل <bdi>{}</bdi> بشكل سليم"
      },
      {
         question:"ماهي الكتابة الصح للكود التالي <bdi>select*from Courses where mark between 90 and 100</bdi>",
         options:["Select*from Courses where mark>=90","Select*from Courses where mark>90 or mark<=100","Select*from Courses where mark in (90,100)","Select*from Courses where mark>=90 and mark<=100"],
-        correct:4,
+        correct:3,
         explanation:"لانها تعطي نفس نتيجة <bdi>Between 90 and 100</bdi>"
      },
      {
