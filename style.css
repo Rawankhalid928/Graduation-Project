@@ -630,7 +630,7 @@ background-position: right 20px bottom 50px;
 .gamep{
   font-size: 1.3rem;
   direction: rtl;
-  max-width: 600px;
+  max-width: 630px;
   font-weight: bold;
 }
 .right-side2{
@@ -782,8 +782,34 @@ html, body {
   }
   /*نهاية اول ديف*/
   /*بداية ثاني ديف*/
+  .div2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px; 
+  padding: 20px 0; 
+}
   .control{
-   width: 250px;
+   width: 150px;
   }
+  .gamep{
+   font-size: 1rem;
+   max-width: 300px;
+   max-width: 100%;
+   padding: 0 20px;
+   text-align: center;
+  }
+.p2{
+   font-size: 0.9rem;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .right-side2{
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  gap: 0;
+}
   /*نهاية ثاني ديف*/
     }
