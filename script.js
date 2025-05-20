@@ -525,7 +525,47 @@ const practicalQuestions = [
         options:["4","6","8","9"],
         correct:3,
         explanation:"لأن <bdi>3</bdi> مرات للحلقة الأولى و كل مرة منها <bdi>3</bdi> مرات للحلقة الثانية 3*3=9"
+     },
+      {
+        question:"ماهي مخرجات الكود التالي <pre><code>&lt;?php $x=5; While ($x >= 1){ echo $x; $x--;};?&gt;</code></pre>",
+        options:["44321","6532","65321","54321","12345"],
+        correct:3,
+        explanation:"الأرقام من 5 الى 1 بشكل تنازلي"
+     },
+     {
+        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php $x=array(\"a\"=>\"red\",\"b\"=>\"green\");<br> $x=array(\"c\"=>\"blue\",\"d\"=>\"yellow\"); var_dump($x===$y);?&gt;</code></pre>",
+        options:["0","1","bool(true)","bool(false)"],
+        correct:3,
+        explanation:"لأن <bdi>$y</bdi> غير معرف فترجع <bdi>bool(false)</bdi> مع ظهور تحذير"
+     },
+     {
+         question:"ماهي مخرجات الكود التالي <pre><code>&lt;?php $numbers=array(4,6,2); sort($numbers); $arrlength=count($numbers); for($x = 0; $x < $arrlength;$x++){ echo $numbers[$x]; echo \"<br>\";}?&gt;</code></pre>",
+        options:["246","642"],
+        correct:0,
+        explanation:"لأن <bdi>Sort()</bdi> رتبت الأرقام تصاعديا, و الحلقة طبعت كل رقم حسب الترتيب"
+     
+     },
+     {
+        question:"ماهي مخرجات الكود التالي <bdi>Public class Test_1{ public static void main(String[] args){ int a=6,b=4,c=2; c+=a+a*b; System.out.println(\"C=\"+c);}} </bdi>",
+        options:["C=48","C=32","C=12","C=50"],
+        correct:1,
+        explanation:"لأن العملية تكون: 6*4=24 ثم +6 ثم +2 فيصبح الناتج 32"
+    
+     },  
+        
+     {
+        question:"اكمل الفراغ التالي <bdi> Public Class Employee Public Sub Bounce (ByVal salary as Double) if salary<=3000 then Salary +=500 Else Salary +=20 End Sub</bdi>",
+        options:["End class","End class Employee","End","End public class Employee"],
+        correct:0,
+        explanation:"عشان تغلق الكلاس بشكل صحيح لازم تكتب <bdi>End class</bdi>"
+     },
+     {
+        question:"ما قيمة المتغير <bdi>Var</bdi> في التعبير التالي <bdi>Var=Len(\"Hello\")</bdi>",
+        options:["Hello","H","Zero","5"],
+        correct:3,
+        explanation:"لأن <bdi>Len()</bdi> ترجع طول السلسة و <bdi>Hello</bdi> ليست فارغة فيها 5 حروف"
      }
+          
           
 ];
 
