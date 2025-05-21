@@ -102,7 +102,7 @@ const theoryQuestions = [
      explanation:"لايمكن استخدامها خارج الدالة"
     },
    {
-     question:"يتم انشاء ملف <bdi>Cookie</bdi> بواسطة استخدام الدالة <bdi>SetCookie</bdi>",
+     question:"يتم انشاء ملف <bdi>Cookie</bdi> بواسطة استخدام الدالة <bdi>SetCookie</bdi>؟",
      options: ["صح","خطا"],
      correct:0,
     explanation:"يتم انشاء ملف من خلال استخدام الدالة <bdi>SetCookie</bdi>"
@@ -120,7 +120,7 @@ const theoryQuestions = [
     explanation:"يعتبر وصف صفحة"
     },
     {
-     question:"لتحديد طول النص المدخل في <bdi>TextBox</bdi>",
+     question:"لتحديد طول النص المدخل في <bdi>TextBox</bdi>نستخدم ",
      options: ["Length","Text","Long","ForeColor"],
      correct:0,
      explanation:"Text يستخدم لاسترداد النص المدخل Long هو نوع بيانات يستخدم للارقام الصحيحة ForeColor تستخدم لتعيين لون الخط"
@@ -307,10 +307,10 @@ const theoryQuestions = [
         explanation:"تستخدم في واجهات المستخدم لعرض نص ثابت لايمكن للمستخدم تغيره Label"
     },
     {
-        question:"اي من الكلمات المحجوزة في لغة <bdi>SQL</bdi> ",
+        question:"أي من الكلمات التالية محجوزة في لغة<bdi>SQL</bdi>.",
         options: ["INSERT","MAKE","VAR","STRING"],
         correct:0,
-        explanation:"تعتبر <bdi>INSERT</bdi> من الكلمات المجوزة في <bdi>SQL</bdi>"
+        explanation:"تعتبر <bdi>INSERT</bdi> من الكلمات المجوزة في <bdi>SQL</bdi>."
     },
     {
         question:"هل لغة <bdi>Java</bdi> حساسة في حالة الاحرف",
@@ -319,17 +319,10 @@ const theoryQuestions = [
         explanation:"java حساسة في حالة الاحرف"
     } ,      
     {
-        question:"لاستقبال مدخلات نصية من المستخدم في لغة <bdi>VB.Net</bdi>",
-        options: ["Check Box","List Box","Input Box","Msg Box"],
-        correct:2,
-        explanation:"<bdi>InputBox</bdi> هي دالة في <bdi>VB.NET</bdi> تستخدم لعرض نافذة يمكن من خلالها للمستخدم ادخال بيانات نصية"
-
-    },
-    {
-        question:"<bdi>Arr(3,4)</bdi>",
+        question:"<bdi>Arre(3,4)</bdi>",
         options: ["عدد الصفوف 3 وعدد الاعمدة 4","عدد الصفوف 4 و عدد الاعمدة 5","عدد الصفوف 4 و عدد الاعمدة 3","عدد الصفوف 5 و عدد الاعمدة 4"],
         correct:0,
-        explanation:"<bdi>Arr(3,4)</bdi> يعبر عن مصفوفة او جدول يحتوي على 3 صفوف و 4 اعمدة"
+        explanation:"<bdi>Arre(3,4)</bdi> يعبر عن مصفوفة او جدول يحتوي على 3 صفوف و 4 اعمدة"
     },
     {
         question:"يستخدم شكل المستطيل للجمل الشرطية في المخططات الانسابية <bdi>(FLOW CHART)</bdi>",
@@ -365,11 +358,11 @@ const theoryQuestions = [
         question:"في لغة البرمجة <bdi>Java</bdi> يمكن تعريف مصفوفات ذات اكثر من بعد واحد",
         options: ["خطا","صح"],
         correct:1,
-        explanation:"نعم، في Java يمكن تعريف مصفوفات ذات أكثر من بعد، مثل int[][] arr = new int[3][4]"
+        explanation:"نعم يمكن تعريف مصفوفة ذات أكثر من بعد"
     },
     {
         question:"<bdi>Session</bdi> هو وسيلة لتخزين المعلومات ليتم استخدامها عبر صفحات متعددة و يتم تخزينها في",
-        options: ["جهاز المستخدم","الخادم","متغير","في كائن <bdi>Object</bdi>"],
+        options: ["جهاز المستخدم","الخادم","متغير","في كائن object"],
         correct:1,
         explanation:"يتم تخزينها في الخادم"
     },
@@ -377,8 +370,58 @@ const theoryQuestions = [
         question:"تحتاج الاستعلامات الفرعية المرتبطة باستعلام رئيسي للكثير من الوقت و المعالجة بالمقارنة مع الاستعلامات غير المرتبطة باستعلامها الرئيسي",
         options: ["صح","خطا"],
         correct:0,
-        explanation:"لان الاستعلامات المرتبطة تنفذ مرة لكل صف فتكون ابطا من غير المرتبطة"
+        explanation:"لان الاستعلامات المرتبطة تنفذ مرة لكل صف فتكون ابطء من غير المرتبطة"
+    },
+    {
+        question:"يتم تمرير قيم المعاملات<bdi>parameters</bdi> الى الدالة عندما يتم استدعائها",
+        options:["صح ","خطأ"],
+        correct:0,
+        explanation:" عند استدعاء دالة في البرمجة، يتم تمرير قيم المعاملات إليها لكي تعمل عليها"
+    },
+      {
+        question:"المتغيرات المحلية <bdi>local variables</bdi> التي يتم تعريفها داخل الدالة لايمكن استخدامها خارج تلك الدالة ",
+        options:["صح","خطأ"],
+        correct:0,
+        explanation:"المتغيرات المحلية هي متغيرات تعرف داخل دالة معينة ويكون نطاقها محدودا داخل تلك الدالة "
+    },
+      {
+        question:"أداة تمكن المبرمج من قبول قيم نصية او رقمية من المستخدم",
+        options:["label","Textbox","combo box","command Button"],
+        correct:1,
+        explanation:".<bdi>Textbox </bdi> لأنها من أدوات الادخال "
+    },
+    {
+        question:"قيد يمكن المبرمج من منع تكرار القيم المدخلة من المستخدم داخل العمود",
+        options:["Unique","Not null","praimary key","Foreign key"],
+        correct:0,
+        explanation:"يضمن ألا تتكرر القيم في عمود معين"
+    },
+    {
+        question:"الحجم التخزيني الأقصى للمتغيرات من نوع <bdi>Integer</bdi>هو",
+        options:["32 Bit","64 Bit","16 Bit","8 Bit"],
+        correct:0,
+        explanation:".<bdi>32Bit </bdi> هو الحد الاقصى "
+    },
+    {
+        question:"اي العبارات التالية تصف وظيفة الكلمة الاساسية <bdi>Where</bdi> في جملة الاستعلام",
+        options:["تحديد الجداول المراد الاستعلام عنها","تحديد الاعمدة","ترتيب ناتج الاستعلام","تحديد شرط الاستعلام"],
+        correct:3,
+        explanation:"تستخدم<bdi>Where</bdi>لتحديد السجلات التي تستوفي شرطًا معينًا"
+    },
+    {
+        question:"<bdi>FONT</bdi> وسم خاص لتنسيق خط الكتابة",
+        options:["صح","خطأ"],
+        correct:0,
+        explanation:"تستخدم فقط لتنسيق خط الكتابة"
+    },
+    {
+        question:"أي العبارات التالية صحيحة ", 
+        options:["<a href='www.google.com' >Google</a>","<a name= 'www.google.com > Google </a>'","<a> www.google.com </a>","<a url='www.google.com'"],
+        correct:0,
+        explanation:"الخيار الاول هو الصحيح لأنه يستخدم السمة<bdi>href</bdi> بشكل صحيح لانشاء رابط يشير الى موقع ويب"
+
     }
+
 ];
 
 const practicalQuestions = [
