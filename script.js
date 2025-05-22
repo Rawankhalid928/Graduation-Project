@@ -479,32 +479,32 @@ const practicalQuestions = [
      correct:3,
      explanation:" ترجع الباقي عند القسمة MOD"
      },
-      {
-        question:"ماهو قيمة المتغير <bdi>S</bdi> بعد تنفيذ العملية التاليه <bdi>int S=19%4;</bdi>",
+     {
+        question:"ماهو قيمة المتغير <bdi>S</bdi><br> بعد تنفيذ العملية التاليه <bdi>int S=19%4;</br></bdi>",
         options:["2","4","3","4.75"],
         correct:2,
         explanation:"لان 4*4=16 و 19-16=3"
      },
      {
-        question:"ما نتيجة الكود x>y&&a",
-        options:["x>y=true and a","x>y=false and a"],
+        question:"ما نتيجة الكود <bdi>x > y && a</bdi>",
+        options:["x > y = true and a","x > y = false and a"],
         correct:0,
-        explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النتيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
+        explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
      },
      {
-        question:"العملية التي يقوم بها الامر التالي <pre><code>&lt;?php define('var','program');?&gt;</code></pre>",
+        question:"العملية التي يقوم بها الامر التالي <pre><code> <?php define('var','program');?></code></pre>",
         options:["تعريف متغير ثابت بمسمى var و اسناد قيمة له","تعريف متغير بمسمى var,program","دمج الكلمتين var,program لتصبح varprogram","Error"],
         correct:0,
         explanation:"لان <bdi>define</bdi> تستخدم لتعريف ثابت و ليس متغير عادي"
      },
      {
         question:"طريقة الكتابة الصحيحة لعبارة قيمة المتغير <bdi>X</bdi> اكبر من <bdi>9</bdi> او اصغر من <bdi>4</bdi>",
-        options:["X<4>9","X<9>4","X>9 && X<4","X>9||X<4"],
+        options:["X < 4 > 9","X < 9 > 4","X > 9 && X < 4","X > 9 || X < 4"],
         correct:3,
         explanation:"لان علامة || تستخدم لكلمة او"
      },
      {
-        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php $a=12; Echo(gettype($a));?&gt;</code></pre>",
+        question:"ماهي مخرجات البرنامج التالي <pre><code><?php $a=12; Echo(gettype($a));?></code></pre>",
         options:["Boolean","String","Integer","Long"],
         correct:2,
         explanation:"gettype($a) ترجع integer"
@@ -518,39 +518,43 @@ const practicalQuestions = [
      {
         question:"اي من التالي يعتبر تعريف صحيح لمصفوفة احادية",
         options:["int[]mylist={'1','2','3'};","int[]mylist=(1,2,3);","int mylist[][]={1,2,3};","int mylist[]={1,2,3};"],
-        correct:3,
+        correct:4,
         explanation:"لان النوع <bdi>int</bdi> صحيح التسمية <bdi>[]mylist</bdi> صحيحة و القيم المحصورة داخل <bdi>{}</bdi> بشكل سليم"
      },
      {
-        question:"ماهي الكتابة الصح للكود التالي <bdi>select*from Courses where mark between 90 and 100</bdi>",
+        question:"ماهي الكتابة الصح للكود التالي <br><bdi>select*from Courses where mark between 90 and 100</bdi></br>",
         options:["Select*from Courses where mark>=90","Select*from Courses where mark>90 or mark<=100","Select*from Courses where mark in (90,100)","Select*from Courses where mark>=90 and mark<=100"],
-        correct:3,
+        correct:4,
         explanation:"لانها تعطي نفس نتيجة <bdi>Between 90 and 100</bdi>"
      },
      {
-        question:"ماهو ناتج الكود التالي <bdi>int i=5; int x =15;if(i<=5 && x >=15){i--;System.out.print(i--);}</bdi>",
+        question:"ماهو ناتج الكود التالي <br><bdi>int i=5; int x =15;if(i<=5 && x >=15){i--;System.out.print(i--);}</bdi></br>",
         options:["3","4","2"],
         correct:1,
-        explanation:"لان الامر <bdi>System.out.print(i--)</bdi> يطبع القيمة اولا ثم ينقصها"
+        explanation:"لأن الامر <bdi>System.out.print(i--)</bdi> يطبع القيمة اولا ثم ينقصها"
      },
-      {
-        question:"ماهي مخرجات البرنامج التالي <bdi>for(int x = 12; x > 0; x = x/2){ System.out.print(x);}</bdi>",
+     {
+        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php for <br> (int x = 12; x > 0; x = x/2){ System.out.print(x)};&gt;?><br></pre></code>",
         options:["136","631","13612","12631"],
         correct:3,
         explanation:"لأن البرنامج يطبع 12 6 3 1"
      },
      {
-        question:"ماهي مخرجات البرنامج التالي <bdi>$x=1; $y=2; echo \"$x+$y\"=.($+$y);</bdi>",
+         question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php $x=1; $y=2; <br> echo \"$x+$y\"=.($+$y);?&gt;</pre></code>",
         options:["$x+$y=3","3=3","1+2=3","1+2=1+2"],
         correct:2,
-        explanation:"الجمع له أسبقية أعلى، ولما يتعامل مع نص في عملية حسابية، يحاول يستخلص قيمة رقمية من بداية النص، وإن لم يكن نصًا يبدأ برقم، يأخذ صفر. ثم يُتم العملية"
+        explanation:"الجمع له أسبقية أعلى، ولما يتعامل مع نص في عملية "
      },
+
      {
-        question:"يمكن الوصول للعنصر الخامس في المصفوفة التالية باستخدام <bdi>int x []=new int[5];</bdi>",
+         question:"يمكن الوصول للعنصر الخامس في المصفوفة التالية باستخدام <br><bdi>int x []=new int[5];</br></bdi>",
         options:["int[5]","x[5]","x[4]"],
         correct:2,
         explanation:"لأن المصفوفات تبدأ العد من 0 و العنصر الخامس يكون موقعة 4"
+     
      },
+
+       
      {
         question:"لتعديل درجات المتدربين في الجدول <bdi>(Students)</bdi> بحيث تكون 20 درجة للمتدربين الذين حصلو على اقل من 20 درجة في العمود <bdi>(Degree)</bdi> نستخدم الامر",
         options:["UPDATE Students SET Degree=20 Where Degree> 20;","UPDATE Students SET Degree=20 WHERE Degree< 20;"," UPDATE Students Degree=20 WHERE Degree> 20;","UPDATE Students WHERE Degree< 20 SET Degree=20;"],
@@ -558,38 +562,31 @@ const practicalQuestions = [
         explanation:"لأن لتحديث الجدول <bdi>Update</bdi> لتحديد القيمة الجديدة <bdi>Set</bdi> لتحديد الصفوف التي ينطبق عليها الشرط <bdi>Where</bdi>"
      },
      {
-        question:"قيمة <bdi>X</bdi> عند تنفيذ العملية الحسابية التالية في <bdi>VB.NET x=5+(-3*(412))</bdi>",
+        question:"قيمة <bdi>X</bdi> عند تنفيذ العملية الحسابية التالية في <br><bdi>VB.NET x=5+(-3*(412))</br></bdi>",
         options:["19","-24","-43","29","-1231"],
         correct:4,
         explanation:"لأن نبدأ بالأس ثم نضرب و نجمع"
      },
      {
-        question:"كم مرة يقوم بطباعة الكود التالي <bdi>for(x = 0; x < 3; x++) for(y = 0; y < 3; ++y)</bdi>",
+        question:"كم مرة يقوم بطباعة الكود التالي <pre><code>&lt;?php for(x = 0; x < 3; x++) for(y = 0; y < 3; ++y);?&gt;</pre></code>",
         options:["4","6","8","9"],
         correct:3,
         explanation:"لأن <bdi>3</bdi> مرات للحلقة الأولى و كل مرة منها <bdi>3</bdi> مرات للحلقة الثانية 3*3=9"
      },
-      {
+     {
         question:"ماهي مخرجات الكود التالي <pre><code>&lt;?php $x=5; While ($x >= 1){ echo $x; $x--;};?&gt;</code></pre>",
         options:["44321","6532","65321","54321","12345"],
         correct:3,
         explanation:"الأرقام من 5 الى 1 بشكل تنازلي"
      },
      {
-        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php $x=array(\"a\"=>\"red\",\"b\"=>\"green\");<br> $x=array(\"c\"=>\"blue\",\"d\"=>\"yellow\"); var_dump($x===$y);?&gt;</code></pre>",
+        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php $x=array(\"a\"=>\"red\",\"b\"=>\"green\");<br> $x=array(\"c\"=>\"blue\",\"d\"=>\"yellow\");<br> var_dump($x===$y);?&gt;</br></code></pre>",
         options:["0","1","bool(true)","bool(false)"],
         correct:3,
         explanation:"لأن <bdi>$y</bdi> غير معرف فترجع <bdi>bool(false)</bdi> مع ظهور تحذير"
      },
      {
-         question:"ماهي مخرجات الكود التالي <pre><code>&lt;?php $numbers=array(4,6,2); sort($numbers); $arrlength=count($numbers); for($x = 0; $x < $arrlength;$x++){ echo $numbers[$x]; echo \"<br>\";}?&gt;</code></pre>",
-        options:["246","642"],
-        correct:0,
-        explanation:"لأن <bdi>Sort()</bdi> رتبت الأرقام تصاعديا, و الحلقة طبعت كل رقم حسب الترتيب"
-     
-     },
-     {
-        question:"ماهي مخرجات الكود التالي <bdi>Public class Test_1{ public static void main(String[] args){ int a=6,b=4,c=2; c+=a+a*b; System.out.println(\"C=\"+c);}} </bdi>",
+        question:"ماهي مخرجات الكود التالي <bdi>Public class Test_1<br><br>{ public static void main(String[] args){ int a=6,b=4,c=2; c+=a+a*b; System.out.println(\"C=\"+c);}}</br></br> </bdi>",
         options:["C=48","C=32","C=12","C=50"],
         correct:1,
         explanation:"لأن العملية تكون: 6*4=24 ثم +6 ثم +2 فيصبح الناتج 32"
@@ -597,7 +594,7 @@ const practicalQuestions = [
      },  
         
      {
-        question:"اكمل الفراغ التالي <bdi> Public Class Employee Public Sub Bounce (ByVal salary as Double) if salary<=3000 then Salary +=500 Else Salary +=20 End Sub</bdi>",
+        question:"اكمل الفراغ التالي <bdi> Public Class Employee Public Sub Bounce <br><br> (ByVal salary as Double) if salary<=3000 then Salary +=500 Else Salary +=20 End Sub </br></br></bdi>",
         options:["End class","End class Employee","End","End public class Employee"],
         correct:0,
         explanation:"عشان تغلق الكلاس بشكل صحيح لازم تكتب <bdi>End class</bdi>"
@@ -607,9 +604,7 @@ const practicalQuestions = [
         options:["Hello","H","Zero","5"],
         correct:3,
         explanation:"لأن <bdi>Len()</bdi> ترجع طول السلسة و <bdi>Hello</bdi> ليست فارغة فيها 5 حروف"
-     }
-          
-          
+     }           
 ];
 
 let current = 0;
