@@ -492,7 +492,7 @@ const practicalQuestions = [
         explanation:"اولا نحسب نتيجة<bdi>x>y</bdi> ثم نستخدم النيجة مع <bdi>a</bdi> باستخدام <bdi>&&</bdi>"
      },
      {
-        question:"العملية التي يقوم بها الامر التالي <pre><code> <?php define('var','program');?></code></pre>",
+        question:"العملية التي يقوم بها الامر التالي <pre><code>&lt;?php define('var','program');?&gt;></code></pre>",
         options:["تعريف متغير ثابت بمسمى var و اسناد قيمة له","تعريف متغير بمسمى var,program","دمج الكلمتين var,program لتصبح varprogram","Error"],
         correct:0,
         explanation:"لان <bdi>define</bdi> تستخدم لتعريف ثابت و ليس متغير عادي"
@@ -504,7 +504,7 @@ const practicalQuestions = [
         explanation:"لان علامة || تستخدم لكلمة او"
      },
      {
-        question:"ماهي مخرجات البرنامج التالي <pre><code><?php $a=12; Echo(gettype($a));?></code></pre>",
+        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php $a=12; Echo(gettype($a));?&gt;></code></pre>",
         options:["Boolean","String","Integer","Long"],
         correct:2,
         explanation:"gettype($a) ترجع integer"
@@ -518,13 +518,13 @@ const practicalQuestions = [
      {
         question:"اي من التالي يعتبر تعريف صحيح لمصفوفة احادية",
         options:["int[]mylist={'1','2','3'};","int[]mylist=(1,2,3);","int mylist[][]={1,2,3};","int mylist[]={1,2,3};"],
-        correct:4,
+        correct:3,
         explanation:"لان النوع <bdi>int</bdi> صحيح التسمية <bdi>[]mylist</bdi> صحيحة و القيم المحصورة داخل <bdi>{}</bdi> بشكل سليم"
      },
      {
         question:"ماهي الكتابة الصح للكود التالي <br><bdi>select*from Courses where mark between 90 and 100</bdi></br>",
         options:["Select*from Courses where mark>=90","Select*from Courses where mark>90 or mark<=100","Select*from Courses where mark in (90,100)","Select*from Courses where mark>=90 and mark<=100"],
-        correct:4,
+        correct:3,
         explanation:"لانها تعطي نفس نتيجة <bdi>Between 90 and 100</bdi>"
      },
      {
@@ -534,7 +534,7 @@ const practicalQuestions = [
         explanation:"لأن الامر <bdi>System.out.print(i--)</bdi> يطبع القيمة اولا ثم ينقصها"
      },
      {
-        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php for <br> (int x = 12; x > 0; x = x/2){ System.out.print(x)};&gt;?><br></pre></code>",
+        question:"ماهي مخرجات البرنامج التالي <pre><code>&lt;?php for (int x = 12; x > 0; x = x/2){ System.out.print(x)};&gt;?</pre></code>",
         options:["136","631","13612","12631"],
         correct:3,
         explanation:"لأن البرنامج يطبع 12 6 3 1"
