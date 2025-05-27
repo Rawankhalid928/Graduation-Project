@@ -7,6 +7,7 @@
 
     body {
       font-family: sans-serif;
+      overflow-x: hidden;
     }
     /*بداية زر الدخول*/.uiverse {
   --duration: 7s;
@@ -615,7 +616,9 @@ background-position: right 20px bottom 50px;
   height: 750px;
   transform: scale(0.4);
 }
-
+.robot2 {
+  display: none;
+}
  /*اول div نهاية*/
 
 /*بداية ديف 2*/
@@ -677,28 +680,112 @@ background-position: right 20px bottom 50px;
 
 /*بداية ديف 3*/
 .div3 {
+display: flex;
+height: 100vh;
+width: 100vw;
+justify-content: space-around;
+background: RGB(77, 29, 55) ;
+background: radial-gradient(circle, rgba(77, 29, 55, 1) 58%, rgba(0, 0, 0, 1) 93%);  align-items: center;
+}   
+ .fly {
+      position: absolute;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      animation-duration: 5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      z-index: 1;
+    }
+
+    .from-right {
+      top: 50px;
+      font-size: 1vw; 
+      animation-name: flyFromRight;
+    }
+
+    .from-left {
+      top: 50%;
+      font-size: 1vw; 
+      transform: translateY(-50%);
+      animation-name: flyFromLeft;
+    }
+
+    .from-right-bottom {
+      font-size: 1vw; 
+      bottom: 50px;
+      animation-name: flyFromRightBottom;
+    }
+
+    @keyframes flyFromRight {
+      0% { right: -200px; }
+      50% { right: 50%; }
+      100% { right: 100vw; }
+    }
+
+    @keyframes flyFromLeft {
+      0% { left: -200px; }
+      50% { left: 50%; }
+      100% { left: 100vw; }
+    }
+
+    @keyframes flyFromRightBottom {
+      0% { right: -200px; }
+      50% { right: 50%; }
+      100% { right: 100vw; }
+    }
+    .design{
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  justify-content: space-around;
-  background-color: black;
+  width: 93vw;  
+  height: 90vh; 
+  background-color: rgba(170, 170, 170, 0.525); 
+  border-radius: 30px;     
+  box-shadow: 0 0 70px rgba(141, 54, 100, 0.868);
+  z-index: 10;
   align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
+.reasons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  gap: 70px;
+  }
+
+.reason {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.525);
+  border-radius: 10px;
+  box-shadow: 0 0 70px rgba(141, 54, 100, 0.868);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  transition: transform 0.3s ease;
+  gap: 25px;
+}
+
+.reason:hover {
+  transform: scale(1.05);
+}
+
+.reason h3 {
+ color: #d7b52c;
+ font-size: 20px; 
+ font-weight:bold;
+}
+
+.reason p {
+  font-size: 17px;
+
+}
+
 /*نهاية ديف 3*/
 
-/*بداية ديف 4*/
-.div4 {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  justify-content: space-around;
-  background-color: black;
-  align-items: center;
-}
-/*نهاية ديف 4*/
-.robot2 {
-  display: none;
-}
 
     @media (max-width: 768px) {
 * {
@@ -806,4 +893,34 @@ html, body {
   gap: 0;
 }
   /*نهاية ثاني ديف*/
+  /*بداية الديف3*/
+    .fly {
+    display: none !important;
+  }
+    .div3 {
+    flex-direction: column;
+  }
+    .reasons {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .reason {
+    width: 67%;
+  }
+
+  .design {
+    width: 120vw;
+    height: auto;
+    padding: 20px 10px;
+    transform: scale(0.7); 
+    transform-origin: top center; 
+    margin-top:130px;
+  }
+    .div3 .menu,
+  .div3 .login-btn {
+    display: none !important;
+  }
+  /*نهاية الديف3*/
     }
