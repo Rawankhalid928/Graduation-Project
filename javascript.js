@@ -5,7 +5,7 @@ gsap.matchMedia().add("(min-width: 787px)", () => {
 
 
 /*فنكشين حق البكوسات div*/
-let elements = [".div1", ".div2", ".div3"];
+let elements = [".div1", ".div2", ".div3" , ".div4"];
 
 elements.forEach(selector => {
   gsap.from(selector, {
@@ -37,7 +37,7 @@ elements.forEach(selector => {
         scrub:true,
         toggleActions: "restart pause reverse pause"
     },
-    y: -100, // تغيير هذه القيمة لتحديد المسافة التي يظهر منها العنصر
+    y: -85, // تغيير هذه القيمة لتحديد المسافة التي يظهر منها العنصر
     duration: 3,
   });
 
